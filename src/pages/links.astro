@@ -40,8 +40,8 @@ const links = [
 		<div class="linktree-card">
 			<!-- Header / Profile -->
 			<div class="profile-header">
-				<a href="/" class="avatar-link" title="Kembali ke Beranda">
-					<img src="/logobaraqbah.svg" alt="Logo Baraqbah Beach Nature" class="profile-avatar-img" />
+				<a href={import.meta.env.BASE_URL} class="avatar-link" title="Kembali ke Beranda">
+					<img src={`\${import.meta.env.BASE_URL}logobaraqbah.svg`} alt="Logo Baraqbah Beach Nature" class="profile-avatar-img" />
 				</a>
 				<h1 class="brand-name">BARAQBAH BEACH NATURE</h1>
 				<p class="brand-tagline">Pantai Guci Batu Kapal • Desa Maja</p>

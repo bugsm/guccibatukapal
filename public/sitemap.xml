@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://bugsm.github.io/guccibatukapal/</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://bugsm.github.io/guccibatukapal/images/IMG_3244.jpg</image:loc>
+      <image:title>Sunset di Tebing Karang Pantai Guci Batu Kapal</image:title>
+      <image:caption>Siluet megah gugusan batu karang ikonik dengan bendera saat matahari terbenam keemasan.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://bugsm.github.io/guccibatukapal/images/IMG_3190.jpg</image:loc>
+      <image:title>Kesejukan Teduh Pesisir Maja Kalianda</image:title>
+      <image:caption>Rindangnya pepohonan pantai yang asri berpadu dengan air laut bening dan bebatuan alami.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://bugsm.github.io/guccibatukapal/images/IMG_3182.jpg</image:loc>
+      <image:title>Wonderful Natural Beach Pantai Guci Batu Kapal</image:title>
+      <image:caption>Ikon kayu selamat datang dengan sentuhan khas Lampung Selatan di tepian pantai.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://bugsm.github.io/guccibatukapal/images/IMG_3208.jpg</image:loc>
+      <image:title>Biota Laut dan Kelomang Alami</image:title>
+      <image:caption>Perairan dangkal yang sangat ramah anak untuk menemukan kelomang dan keanekaragaman laut.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://bugsm.github.io/guccibatukapal/images/IMG_3229.jpg</image:loc>
+      <image:title>Pesona Karang Dangkal Pantai Guci Batu Kapal</image:title>
+      <image:caption>Air laut jernih kebiruan dengan formasi karang pesisir yang eksotis dan aman dijelajahi.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://bugsm.github.io/guccibatukapal/images/IMG_3257.jpg</image:loc>
+      <image:title>Berenang Santai Saat Senja di Pantai Kalianda</image:title>
+      <image:caption>Momen menenangkan berenang di laut tenang dengan latar matahari terbenam sempurna.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bugsm.github.io/guccibatukapal/links/</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>

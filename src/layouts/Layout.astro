@@ -2,12 +2,131 @@
 interface Props {
 	title?: string;
 	description?: string;
+	keywords?: string;
+	image?: string;
+	type?: string;
 }
 
 const {
-	title = 'Pantai Guci Batu Kapal — Baraqbah Beach Nature',
-	description = 'Surga pantai pasir putih legendaris di Desa Maja, Kalianda, Lampung Selatan. Destinasi alami untuk liburan keluarga, sunset view, dan private camping.',
+	title = 'Pantai Guci Batu Kapal Kalianda — Baraqbah Beach Nature',
+	description = 'Surga pantai pasir putih legendaris di Desa Maja, Kalianda, Lampung Selatan. Destinasi alami untuk liburan keluarga, panorama sunset eksotis, air laut jernih ramah anak, dan private camping.',
+	keywords = 'pantai guci batu kapal, baraqbah beach nature, pantai guci batu kapal kalianda, pantai kalianda lampung selatan, wisata desa maja, tiket masuk pantai guci batu kapal, camping pantai kalianda, spot sunset lampung',
+	image = `${import.meta.env.BASE_URL}/images/IMG_3244.jpg`,
+	type = 'website',
 } = Astro.props;
+
+// Ensure full URL for canonical, open graph, and schema
+const siteOrigin = Astro.site ? Astro.site.toString().replace(/\/$/, '') : 'https://bugsm.github.io';
+const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://bugsm.github.io');
+const ogImageUrl = image.startsWith('http') ? image : new URL(image, canonicalURL).toString();
+
+const schemaJson = {
+	"@context": "https://schema.org",
+	"@graph": [
+		{
+			"@type": ["TouristAttraction", "Beach", "Campground"],
+			"@id": `${siteOrigin}/guccibatukapal/#attraction`,
+			"name": "Pantai Guci Batu Kapal (Baraqbah Beach Nature)",
+			"alternateName": [
+				"Pantai Guci Batu Kapal",
+				"Baraqbah Beach Nature",
+				"Pantai Batu Kapal Kalianda",
+				"Guci Batu Kapal Desa Maja"
+			],
+			"url": `${siteOrigin}/guccibatukapal/`,
+			"logo": `${siteOrigin}/guccibatukapal/logobaraqbah.svg`,
+			"image": [
+				`${siteOrigin}/guccibatukapal/images/IMG_3244.jpg`,
+				`${siteOrigin}/guccibatukapal/images/IMG_3190.jpg`,
+				`${siteOrigin}/guccibatukapal/images/IMG_3182.jpg`,
+				`${siteOrigin}/guccibatukapal/images/IMG_3208.jpg`,
+				`${siteOrigin}/guccibatukapal/images/IMG_3229.jpg`,
+				`${siteOrigin}/guccibatukapal/images/IMG_3257.jpg`
+			],
+			"description": "Destinasi wisata pantai pasir putih alami di Desa Maja, Kalianda, Lampung Selatan. Dikelilingi pohon rindang yang sejuk, air laut jernih tenang aman untuk anak-anak, siluet tebing karang ikonik Batu Kapal saat sunset, serta lokasi camping private tepi pantai.",
+			"telephone": "+6285199709926",
+			"email": "baraqbahbeachnature@gmail.com",
+			"priceRange": "Rp 10.000 - Rp 50.000",
+			"currenciesAccepted": "IDR",
+			"paymentAccepted": "Cash, Transfer, QRIS",
+			"address": {
+				"@type": "PostalAddress",
+				"streetAddress": "Jl. Pesisir Desa Maja (Sebelum tanjakan Alfamart)",
+				"addressLocality": "Kecamatan Kalianda",
+				"addressRegion": "Lampung Selatan",
+				"postalCode": "35551",
+				"addressCountry": "ID"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": -5.7333,
+				"longitude": 105.5833
+			},
+			"openingHoursSpecification": [
+				{
+					"@type": "OpeningHoursSpecification",
+					"dayOfWeek": [
+						"Monday",
+						"Tuesday",
+						"Wednesday",
+						"Thursday",
+						"Friday",
+						"Saturday",
+						"Sunday"
+					],
+					"opens": "07:00",
+					"closes": "17:00"
+				}
+			],
+			"sameAs": [
+				"https://instagram.com/baraqbahbeachnature",
+				"https://maps.google.com/?q=Pantai+Guci+Batu+Kapal+Kalianda"
+			],
+			"isAccessibleForFree": false,
+			"publicAccess": true,
+			"amenityFeature": [
+				{
+					"@type": "LocationFeatureSpecification",
+					"name": "Pantai Pasir Putih Alami",
+					"value": true
+				},
+				{
+					"@type": "LocationFeatureSpecification",
+					"name": "Perairan Dangkal Aman Berenang Anak",
+					"value": true
+				},
+				{
+					"@type": "LocationFeatureSpecification",
+					"name": "Spot Sunset Ikonik Tebing Batu Kapal",
+					"value": true
+				},
+				{
+					"@type": "LocationFeatureSpecification",
+					"name": "Area Private Camping Tepi Pantai",
+					"value": true
+				},
+				{
+					"@type": "LocationFeatureSpecification",
+					"name": "Fasilitas Rombongan & Kru Bus Gratis",
+					"value": true
+				},
+				{
+					"@type": "LocationFeatureSpecification",
+					"name": "Parkir Motor, Mobil Pribadi, dan Bus Pariwisata",
+					"value": true
+				}
+			]
+		},
+		{
+			"@type": "WebSite",
+			"@id": `${siteOrigin}/guccibatukapal/#website`,
+			"url": `${siteOrigin}/guccibatukapal/`,
+			"name": "Baraqbah Beach Nature (Pantai Guci Batu Kapal)",
+			"description": "Website Resmi Pantai Guci Batu Kapal Kalianda, Lampung Selatan",
+			"inLanguage": "id-ID"
+		}
+	]
+};
 ---
 
 <!doctype html>
@@ -15,22 +134,55 @@ const {
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="theme-color" content="#1e3a34" />
+		<meta name="author" content="Baraqbah Beach Nature" />
+		<meta name="copyright" content="Baraqbah Beach Nature" />
+		<meta name="format-detection" content="telephone=yes" />
+
+		<!-- Favicons -->
 		<link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL}/logobaraqbah.svg`} />
 		<link rel="icon" href={`${import.meta.env.BASE_URL}/logobaraqbah.svg`} />
 		<link rel="shortcut icon" href={`${import.meta.env.BASE_URL}/logobaraqbah.svg`} />
 		<link rel="apple-touch-icon" href={`${import.meta.env.BASE_URL}/logobaraqbah.svg`} />
-		<meta name="generator" content={Astro.generator} />
 
-		<!-- SEO -->
+		<!-- Canonical & Robots -->
+		<link rel="canonical" href={canonicalURL} />
+		<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+		<!-- Primary Meta Tags -->
 		<title>{title}</title>
+		<meta name="title" content={title} />
 		<meta name="description" content={description} />
-		<meta name="keywords" content="pantai guci batu kapal, baraqbah beach nature, desa maja kalianda, pantai lampung selatan, wisata kalianda, camping pantai lampung" />
+		<meta name="keywords" content={keywords} />
 
-		<!-- Open Graph -->
+		<!-- Open Graph / Facebook / WhatsApp -->
+		<meta property="og:type" content={type} />
+		<meta property="og:url" content={canonicalURL} />
+		<meta property="og:site_name" content="Baraqbah Beach Nature" />
 		<meta property="og:title" content={title} />
 		<meta property="og:description" content={description} />
-		<meta property="og:type" content="website" />
-		<meta property="og:image" content="/images/beach-sunset.jpg" />
+		<meta property="og:image" content={ogImageUrl} />
+		<meta property="og:image:secure_url" content={ogImageUrl} />
+		<meta property="og:image:alt" content="Pantai Guci Batu Kapal Kalianda Lampung Selatan" />
+		<meta property="og:image:type" content="image/jpeg" />
+		<meta property="og:locale" content="id_ID" />
+
+		<!-- Twitter Card -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:url" content={canonicalURL} />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={description} />
+		<meta name="twitter:image" content={ogImageUrl} />
+
+		<!-- Geo Tags for Local SEO (Kalianda, Lampung Selatan) -->
+		<meta name="geo.region" content="ID-LA" />
+		<meta name="geo.placename" content="Desa Maja, Kalianda, Kabupaten Lampung Selatan" />
+		<meta name="geo.position" content="-5.7333;105.5833" />
+		<meta name="ICBM" content="-5.7333, 105.5833" />
+
+		<!-- Schema.org JSON-LD Structured Data -->
+		<script type="application/ld+json" set:html={JSON.stringify(schemaJson)} />
 
 		<!-- Premium Editorial Fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />

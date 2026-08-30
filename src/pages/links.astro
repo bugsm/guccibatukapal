@@ -29,14 +29,18 @@ const links = [
 	{
 		label: 'Kembali ke Website Utama',
 		sub: 'Lihat info lengkap, galeri & tiket',
-		url: '/',
+		url: import.meta.env.BASE_URL,
 		highlight: false,
 	},
 ];
 ---
 
-<Layout title="Kontak & Reservasi — Baraqbah Beach Nature" description="Tautan resmi reservasi WhatsApp, Instagram, Google Maps, dan Email Pantai Guci Batu Kapal Kalianda.">
-	<main class="linktree-page">
+<Layout
+	title="Kontak & Reservasi — Baraqbah Beach Nature"
+	description="Tautan resmi reservasi WhatsApp, Instagram, Google Maps, dan Email Pantai Guci Batu Kapal Kalianda, Lampung Selatan."
+	keywords="kontak pantai guci batu kapal, wa admin baraqbah beach nature, reservasi camping kalianda, rute pantai maja lampung"
+>
+	<main class="linktree-page" style={`--bg-page-image: url('${import.meta.env.BASE_URL}/images/IMG_3257.jpg')`}>
 		<div class="linktree-card">
 			<!-- Header / Profile -->
 			<div class="profile-header">
@@ -100,7 +104,7 @@ const links = [
 		content: '';
 		position: absolute;
 		inset: 0;
-		background-image: url('/images/IMG_3257.jpg');
+		background-image: var(--bg-page-image);
 		background-size: cover;
 		background-position: center;
 		opacity: 0.6;

@@ -1,46 +1,28 @@
-# Astro Starter Kit: Basics
+# Pantai Guci Batu Kapal (Baraqbah Beach Nature)
 
-```sh
-npm create astro@latest -- --template basics
-```
+Surga pantai alami pasir putih yang terletak di Desa Maja, Kalianda, Kabupaten Lampung Selatan. Website ini merupakan landing page representatif untuk destinasi wisata keluarga, spot *sunset*, dan tempat *camping private* yang dikelola dengan asri.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Deskripsi
 
-## 🚀 Project Structure
+Proyek ini adalah website profil / landing page resmi untuk **Pantai Guci Batu Kapal**. Web ini bertujuan untuk memberikan informasi lengkap, menarik, dan interaktif kepada calon pengunjung mengenai keindahan alam, fasilitas, harga tiket, dan paket camping yang tersedia di pantai legendaris ini.
 
-Inside of your Astro project, you'll see the following folders and files:
+## Fitur Utama
+- **Desain Responsif**: Tampilan UI yang modern, estetik, dan kompatibel untuk perangkat Mobile, Tablet, maupun Desktop.
+- **Informasi Terpusat**: Memuat informasi detail mengenai fasilitas wisata, pengalaman berkemah, dan lokasi.
+- **Tabel Harga**: Daftar harga transparan untuk tiket masuk harian, biaya *camping*, dan sewa peralatan.
+- **Link Cepat (Biolink)**: Halaman rute khusus yang menyajikan tombol akses cepat menuju sosial media dan kontak WhatsApp untuk reservasi (mirip fungsi Linktree).
+- **SEO & Performa Maksimal**: Dikembangkan dengan Astro untuk memastikan performa yang sangat cepat (*zero JS by default*) dan pencarian SEO yang optimal.
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+## Teknologi yang Digunakan
+- [**Astro**](https://astro.build/) - Framework web statis yang super cepat.
+- **HTML5 & CSS3** - Untuk membangun tata letak dan animasi visual yang elegan.
+- **JavaScript (Vanilla)** - Menangani interaksi sisi klien (seperti navigasi *mobile* dan efek DOM).
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## Tentang Lokasi
+Pantai Guci Batu Kapal menyajikan pesona alam pantai yang otentik di Desa Maja. Dikelilingi rimbunnya pepohonan pantai yang sejuk, serta memiliki ciri khas gugusan batu karang alami di lepas pantai yang memecah riak ombak. Tempat ini sangat cocok untuk liburan keluarga yang tenang dan aktivitas berkemah eksklusif.
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## Hubungi Kami
+- **Instagram**: [@baraqbahbeachnature](https://instagram.com/baraqbahbeachnature)
+- **Email**: baraqbahbeachnature@gmail.com
+- **Alamat**: Jl. Pesisir Desa Maja, Kec. Kalianda, Kab. Lampung Selatan
+- **Jam Operasional**: 07.00 - 17.00 WIB (Buka Setiap Hari)

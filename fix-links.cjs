@@ -33,13 +33,13 @@ files.forEach(file => {
   content = content.replace(/href=\"\/([^\"]+)\"/g, (match, p1) => {
     if (p1.startsWith('{')) return match;
     changed = true;
-    return 'href={`\\${import.meta.env.BASE_URL}' + p1 + '`}';
+    return 'href={`${import.meta.env.BASE_URL}' + p1 + '`}';
   });
 
   content = content.replace(/src=\"\/([^\"]+)\"/g, (match, p1) => {
     if (p1.startsWith('{')) return match;
     changed = true;
-    return 'src={`\\${import.meta.env.BASE_URL}' + p1 + '`}';
+    return 'src={`${import.meta.env.BASE_URL}' + p1 + '`}';
   });
 
   if (changed && original !== content) {

@@ -1,0 +1,317 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const links = [
+	{
+		label: 'WhatsApp Reservasi & Info',
+		sub: '0851-9970-9926 (Pika Baraqbah)',
+		url: 'https://wa.me/6285199709926?text=Halo%20Admin%20Pantai%20Guci%20Batu%20Kapal,%20saya%20ingin%20bertanya%20info%20tiket%20dan%20camping',
+		highlight: true,
+	},
+	{
+		label: 'Instagram Resmi',
+		sub: '@BARAQBAH BEACH NATURE',
+		url: 'https://instagram.com/baraqbahbeachnature',
+		highlight: false,
+	},
+	{
+		label: 'Petunjuk Arah Google Maps',
+		sub: 'Desa Maja, Kalianda, Lampung Selatan',
+		url: 'https://maps.google.com/?q=Pantai+Guci+Batu+Kapal+Kalianda',
+		highlight: false,
+	},
+	{
+		label: 'Email Pengelola',
+		sub: 'baraqbahbeachnature@gmail.com',
+		url: 'mailto:baraqbahbeachnature@gmail.com',
+		highlight: false,
+	},
+	{
+		label: 'Kembali ke Website Utama',
+		sub: 'Lihat info lengkap, galeri & tiket',
+		url: '/',
+		highlight: false,
+	},
+];
+---
+
+<Layout title="Kontak & Reservasi — Baraqbah Beach Nature" description="Tautan resmi reservasi WhatsApp, Instagram, Google Maps, dan Email Pantai Guci Batu Kapal Kalianda.">
+	<main class="linktree-page">
+		<div class="linktree-card">
+			<!-- Header / Profile -->
+			<div class="profile-header">
+				<a href="/" class="avatar-link" title="Kembali ke Beranda">
+					<img src="/logobaraqbah.svg" alt="Logo Baraqbah Beach Nature" class="profile-avatar-img" />
+				</a>
+				<h1 class="brand-name">BARAQBAH BEACH NATURE</h1>
+				<p class="brand-tagline">Pantai Guci Batu Kapal • Desa Maja</p>
+				<p class="brand-desc">
+					Destinasi wisata alam pasir putih, spot sunset eksotis & camping private di Kalianda, Lampung Selatan.
+				</p>
+				<div class="status-pill">
+					<span class="status-indicator"></span>
+					<span>Buka Setiap Hari (07.00 — 17.00 WIB)</span>
+				</div>
+			</div>
+
+			<!-- Links List -->
+			<div class="links-group">
+				{links.map((link) => (
+					<a
+						href={link.url}
+						target={link.url.startsWith('http') ? '_blank' : '_self'}
+						rel={link.url.startsWith('http') ? 'noopener noreferrer' : undefined}
+						class={`link-item ${link.highlight ? 'is-highlight' : ''}`}
+					>
+						<div class="link-info">
+							<span class="link-title">{link.label}</span>
+							<span class="link-subtitle">{link.sub}</span>
+						</div>
+						<span class="link-arrow">→</span>
+					</a>
+				))}
+			</div>
+
+			<!-- Footer -->
+			<div class="card-footer">
+				<p>© {new Date().getFullYear()} Baraqbah Beach Nature</p>
+				<p class="credit-dev-links">
+					Made with <span class="heart">❤️</span> by <a href="https://deaal.dev" target="_blank" rel="noopener noreferrer" class="credit-link-links">deaal.dev</a>
+				</p>
+				<p class="address-sub">Jl. Pesisir Desa Maja, Kec. Kalianda, Lampung Selatan</p>
+			</div>
+		</div>
+	</main>
+</Layout>
+
+<style>
+	.linktree-page {
+		min-height: 100vh;
+		position: relative;
+		background-color: #121e1a;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 3rem 1.25rem;
+		overflow: hidden;
+	}
+
+	.linktree-page::before {
+		content: '';
+		position: absolute;
+		inset: 0;
+		background-image: url('/images/IMG_3257.jpg');
+		background-size: cover;
+		background-position: center;
+		opacity: 0.6;
+		z-index: 0;
+		filter: saturate(1.1);
+	}
+
+	.linktree-card {
+		position: relative;
+		z-index: 1;
+		width: 100%;
+		max-width: 480px;
+		background: rgba(255, 255, 255, 0.94);
+		backdrop-filter: blur(16px);
+		-webkit-backdrop-filter: blur(16px);
+		border: 1px solid rgba(255, 255, 255, 0.8);
+		border-radius: var(--radius-lg);
+		padding: 2.5rem 2rem;
+		box-shadow: 0 25px 60px -10px rgba(0, 0, 0, 0.35);
+	}
+
+	.profile-header {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		margin-bottom: 2rem;
+	}
+
+	.avatar-link {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 1.25rem;
+		border-radius: 50%;
+		transition: transform var(--transition-fast), filter var(--transition-fast);
+		cursor: pointer;
+		text-decoration: none;
+	}
+
+	.avatar-link:hover {
+		transform: scale(1.08);
+		filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.2));
+	}
+
+	.profile-avatar-img {
+		width: 68px;
+		height: 68px;
+		object-fit: contain;
+		display: block;
+	}
+
+	.brand-name {
+		font-family: var(--font-serif);
+		font-size: 1.25rem;
+		font-weight: 700;
+		letter-spacing: 0.06em;
+		color: var(--text-title);
+		margin-bottom: 0.25rem;
+	}
+
+	.brand-tagline {
+		font-size: 0.82rem;
+		font-weight: 600;
+		color: var(--brand-accent);
+		margin-bottom: 0.75rem;
+	}
+
+	.brand-desc {
+		font-size: 0.85rem;
+		color: var(--text-muted);
+		line-height: 1.5;
+		margin-bottom: 1rem;
+	}
+
+	.status-pill {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5rem;
+		background: var(--bg-subtle);
+		padding: 0.35rem 0.85rem;
+		border-radius: var(--radius-full);
+		font-size: 0.75rem;
+		font-weight: 500;
+		color: var(--text-body);
+	}
+
+	.status-indicator {
+		width: 6px;
+		height: 6px;
+		background-color: #22c55e;
+		border-radius: 50%;
+	}
+
+	.links-group {
+		display: flex;
+		flex-direction: column;
+		gap: 0.85rem;
+		margin-bottom: 2rem;
+	}
+
+	.link-item {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 1rem 1.25rem;
+		background: var(--bg-main);
+		border: 1px solid var(--border-subtle);
+		border-radius: var(--radius-md);
+		transition: all 0.2s ease;
+	}
+
+	.link-item:hover {
+		border-color: var(--brand-primary);
+		transform: translateY(-2px);
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+	}
+
+	.link-item.is-highlight {
+		background: var(--brand-primary);
+		border-color: var(--brand-primary);
+		color: #ffffff;
+	}
+
+	.link-item.is-highlight .link-title {
+		color: #ffffff;
+	}
+
+	.link-item.is-highlight .link-subtitle {
+		color: #c9ded9;
+	}
+
+	.link-item.is-highlight .link-arrow {
+		color: #ffffff;
+	}
+
+	.link-item.is-highlight:hover {
+		background: var(--brand-dark);
+		border-color: var(--brand-dark);
+	}
+
+	.link-info {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.link-title {
+		font-size: 0.92rem;
+		font-weight: 600;
+		color: var(--text-title);
+		line-height: 1.3;
+	}
+
+	.link-subtitle {
+		font-size: 0.78rem;
+		color: var(--text-muted);
+		margin-top: 0.15rem;
+	}
+
+	.link-arrow {
+		font-size: 1.1rem;
+		color: var(--text-muted);
+		transition: transform 0.2s ease;
+	}
+
+	.link-item:hover .link-arrow {
+		transform: translateX(3px);
+	}
+
+	.card-footer {
+		text-align: center;
+		font-size: 0.75rem;
+		color: var(--text-muted);
+		line-height: 1.6;
+		padding-top: 1.25rem;
+		border-top: 1px solid var(--border-subtle);
+		display: flex;
+		flex-direction: column;
+		gap: 0.25rem;
+	}
+
+	.credit-dev-links {
+		font-size: 0.78rem;
+		font-weight: 500;
+		color: var(--text-title);
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		gap: 0.25rem;
+		margin: 0.2rem 0;
+	}
+
+	.credit-link-links {
+		color: var(--brand-primary);
+		font-weight: 700;
+		text-decoration: underline;
+		text-underline-offset: 2px;
+		transition: color var(--transition-fast);
+	}
+
+	.credit-link-links:hover {
+		color: var(--brand-accent);
+	}
+
+	.heart {
+		display: inline-block;
+		margin: 0 0.1rem;
+	}
+
+	.address-sub {
+		font-size: 0.72rem;
+		color: var(--text-muted);
+	}
+</style>

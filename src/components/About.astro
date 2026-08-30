@@ -1,0 +1,305 @@
+---
+---
+
+<section class="about-section" id="tentang">
+	<div class="container">
+		<div class="about-grid">
+			<!-- Visual Column: Original Beach Photos -->
+			<div class="about-visuals">
+				<div class="image-frame main-frame">
+					<img src="/images/IMG_3190.jpg" alt="Pemandangan Asli Pantai Guci Batu Kapal Kalianda" loading="lazy" />
+					<div class="frame-tag">Suasana Teduh & Karang Alami Desa Maja</div>
+				</div>
+				<div class="sub-frame">
+					<img src="/images/IMG_3182.jpg" alt="Wonderful Natural Beach Lampung Selatan" loading="lazy" />
+					<div class="sub-tag">Wonderful Natural Beach</div>
+				</div>
+			</div>
+
+			<!-- Editorial Text Column -->
+			<div class="about-narrative">
+				<div class="section-badge">DESTINASI ASLI PESISIR KALIANDA</div>
+				<h2 class="narrative-title">Keindahan Alami di Bawah Naungan Teduh Pesisir Maja</h2>
+
+				<p class="narrative-lead">
+					<strong>Pantai Guci Batu Kapal (Baraqbah Beach Nature)</strong> menyajikan pesona alam pantai yang asri dan otentik di Desa Maja, Kalianda, Lampung Selatan. Dikelilingi rimbunnya pepohonan pantai yang sejuk dan gugusan batu karang alami yang memecah riak ombak tenang.
+				</p>
+
+				<p class="narrative-body">
+					Air lautnya yang jernih dan dangkal menjadi tempat yang sangat aman dan menyenangkan bagi keluarga dan anak-anak untuk berenang serta mencari biota laut & kelomang alami. Nikmati juga panorama matahari terbenam (golden sunset) yang magis di balik siluet tebing karang ikonik Batu Kapal, atau nikmati malam bertabur bintang dengan berkemah (camping) di tepi pantai.
+				</p>
+
+				<!-- 4 Main Activity Highlights -->
+				<div class="activity-chips">
+					<div class="chip-item">
+						<span class="chip-icon">🏖️</span>
+						<span>Pantai Pasir Putih</span>
+					</div>
+					<div class="chip-item">
+						<span class="chip-icon">🏊‍♂️</span>
+						<span>Aman untuk Berenang</span>
+					</div>
+					<div class="chip-item">
+						<span class="chip-icon">⛵</span>
+						<span>Batu Kapal Legendaris</span>
+					</div>
+					<div class="chip-item">
+						<span class="chip-icon">⛺</span>
+						<span>Bisa Camping Private</span>
+					</div>
+				</div>
+
+				<!-- Location & Guide Box -->
+				<div class="route-guide-card">
+					<div class="guide-header">
+						<span class="guide-icon">📍</span>
+						<h4>Petunjuk Arah & Panduan Lokasi:</h4>
+					</div>
+					<p class="guide-text">
+						<strong>Alamat:</strong> Jl. Pesisir Desa Maja, Kec. Kalianda, Lampung Selatan.<br />
+						<em>Panduan Arah:</em> Sebelum tanjakan Alfamart / sebelum tanjakan kedua sebelah kanan (jika dari arah Kota Kalianda). Jika dari arah pesisir, berada di sebelah kiri pas turunan setelah pintu masuk Pantai Semukuk.
+					</p>
+					<div class="guide-meta">
+						<div class="meta-item">
+							<span class="meta-label">Jam Operasional</span>
+							<span class="meta-val">07.00 — 17.00 WIB (Buka Setiap Hari)</span>
+						</div>
+						<div class="meta-item">
+							<span class="meta-label">Reservasi & Camp</span>
+							<span class="meta-val">0851-9970-9926 (Pika Baraqbah)</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.about-section {
+		padding: clamp(4rem, 7vw, 6rem) 0;
+		background: #ffffff;
+		border-top: 1px solid var(--border-subtle);
+		border-bottom: 1px solid var(--border-subtle);
+	}
+
+	.about-grid {
+		display: grid;
+		grid-template-columns: 1fr 1.15fr;
+		gap: clamp(2.5rem, 5vw, 4.5rem);
+		align-items: center;
+	}
+
+	/* Visuals */
+	.about-visuals {
+		position: relative;
+		padding-bottom: 3.5rem;
+	}
+
+	.image-frame {
+		position: relative;
+		border-radius: var(--radius-lg);
+		overflow: hidden;
+		box-shadow: 0 15px 35px -10px rgba(0, 0, 0, 0.12);
+	}
+
+	.main-frame img {
+		width: 100%;
+		height: 440px;
+		object-fit: cover;
+		display: block;
+	}
+
+	.frame-tag {
+		position: absolute;
+		bottom: 1.25rem;
+		left: 1.25rem;
+		background: rgba(255, 255, 255, 0.94);
+		backdrop-filter: blur(10px);
+		padding: 0.5rem 1rem;
+		border-radius: var(--radius-full);
+		font-size: 0.78rem;
+		font-weight: 600;
+		color: var(--text-title);
+		letter-spacing: 0.02em;
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+	}
+
+	.sub-frame {
+		position: absolute;
+		bottom: 0;
+		right: -1rem;
+		width: 220px;
+		height: 150px;
+		border-radius: var(--radius-md);
+		overflow: hidden;
+		border: 4px solid #ffffff;
+		box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+	}
+
+	.sub-frame img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		display: block;
+	}
+
+	.sub-tag {
+		position: absolute;
+		bottom: 0.5rem;
+		left: 0.5rem;
+		background: rgba(30, 58, 52, 0.9);
+		color: #ffffff;
+		font-size: 0.68rem;
+		font-weight: 600;
+		padding: 0.25rem 0.65rem;
+		border-radius: var(--radius-full);
+	}
+
+	/* Narrative */
+	.about-narrative {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.section-badge {
+		font-size: 0.72rem;
+		font-weight: 700;
+		letter-spacing: 0.14em;
+		color: var(--brand-accent);
+		margin-bottom: 0.75rem;
+	}
+
+	.narrative-title {
+		font-size: clamp(2rem, 3.5vw, 2.8rem);
+		color: var(--text-title);
+		line-height: 1.15;
+		margin-bottom: 1.5rem;
+	}
+
+	.narrative-lead {
+		font-size: 1.05rem;
+		color: var(--text-body);
+		line-height: 1.7;
+		margin-bottom: 1rem;
+	}
+
+	.narrative-lead strong {
+		color: var(--text-title);
+		font-weight: 600;
+	}
+
+	.narrative-body {
+		font-size: 0.95rem;
+		color: var(--text-muted);
+		line-height: 1.7;
+		margin-bottom: 1.75rem;
+	}
+
+	/* Activity Chips */
+	.activity-chips {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.75rem;
+		margin-bottom: 1.75rem;
+		width: 100%;
+	}
+
+	.chip-item {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.45rem;
+		background: #ffffff;
+		border: 1px solid rgba(30, 58, 52, 0.15);
+		padding: 0.45rem 0.85rem;
+		border-radius: var(--radius-full);
+		font-size: 0.82rem;
+		font-weight: 600;
+		color: var(--brand-dark);
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+	}
+
+	.chip-icon {
+		font-size: 0.95rem;
+	}
+
+	/* Route Guide Card */
+	.route-guide-card {
+		width: 100%;
+		background: var(--bg-subtle);
+		border-radius: var(--radius-md);
+		border: 1px solid var(--border-subtle);
+		padding: 1.5rem;
+	}
+
+	.guide-header {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		margin-bottom: 0.6rem;
+	}
+
+	.guide-icon {
+		font-size: 1.1rem;
+	}
+
+	.guide-header h4 {
+		font-family: var(--font-sans);
+		font-weight: 700;
+		font-size: 0.92rem;
+		color: var(--text-title);
+	}
+
+	.guide-text {
+		font-size: 0.85rem;
+		color: var(--text-body);
+		line-height: 1.6;
+		margin-bottom: 1rem;
+	}
+
+	.guide-meta {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 1rem;
+		padding-top: 1rem;
+		border-top: 1px solid rgba(0, 0, 0, 0.06);
+	}
+
+	.meta-label {
+		display: block;
+		font-size: 0.72rem;
+		text-transform: uppercase;
+		letter-spacing: 0.06em;
+		color: var(--text-muted);
+		font-weight: 600;
+		margin-bottom: 0.2rem;
+	}
+
+	.meta-val {
+		display: block;
+		font-size: 0.85rem;
+		font-weight: 600;
+		color: var(--text-title);
+	}
+
+	@media (max-width: 900px) {
+		.about-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.main-frame img {
+			height: 320px;
+		}
+
+		.sub-frame {
+			width: 170px;
+			height: 110px;
+			right: 0;
+		}
+
+		.guide-meta {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>

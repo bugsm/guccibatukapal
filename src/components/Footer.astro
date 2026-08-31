@@ -8,7 +8,7 @@ const currentYear = new Date().getFullYear();
 			<!-- Brand Info -->
 			<div class="footer-col brand-col">
 				<div class="footer-brand">
-					<img src={`${import.meta.env.BASE_URL}/logobaraqbah.svg`} alt="Logo Baraqbah Beach Nature" class="footer-logo-img" />
+					<img src={`${import.meta.env.BASE_URL}/baraqbahlogo.svg`} alt="Logo Baraqbah Beach Nature" class="footer-logo-img" />
 					<div class="brand-titles">
 						<span class="b-name">BARAQBAH BEACH NATURE</span>
 						<span class="b-tag">Pantai Guci Batu Kapal</span>
@@ -23,8 +23,11 @@ const currentYear = new Date().getFullYear();
 					<a href="https://wa.me/6285199709926" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="WhatsApp">
 						WhatsApp
 					</a>
-					<a href="https://instagram.com/baraqbahbeachnature" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
+					<a href="https://www.instagram.com/beachbaraqbah" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
 						Instagram
+					</a>
+					<a href="https://www.tiktok.com/@baraqbahbeachnature" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="TikTok">
+						TikTok
 					</a>
 					<a href="mailto:baraqbahbeachnature@gmail.com" class="social-btn" aria-label="Email">
 						Email
@@ -51,7 +54,8 @@ const currentYear = new Date().getFullYear();
 				<div class="contact-details">
 					<p><strong>Admin:</strong> 0851-9970-9926 (Pika Baraqbah)</p>
 					<p><strong>Email:</strong> baraqbahbeachnature@gmail.com</p>
-					<p><strong>Instagram:</strong> @baraqbahbeachnature</p>
+					<p><strong>Instagram:</strong> <a href="https://www.instagram.com/beachbaraqbah" target="_blank" rel="noopener noreferrer" class="contact-social-link">@beachbaraqbah</a></p>
+					<p><strong>TikTok:</strong> <a href="https://www.tiktok.com/@baraqbahbeachnature" target="_blank" rel="noopener noreferrer" class="contact-social-link">@baraqbahbeachnature</a></p>
 					<p><strong>Alamat:</strong> Jl. Pesisir Desa Maja, Kec. Kalianda, Kab. Lampung Selatan</p>
 					<p><strong>Jam Operasional:</strong> 07.00 — 17.00 WIB (Buka Setiap Hari)</p>
 				</div>
@@ -192,6 +196,17 @@ const currentYear = new Date().getFullYear();
 	}
 
 	.contact-details strong {
+		color: #ffffff;
+	}
+
+	.contact-social-link {
+		color: #9eb1ab;
+		text-decoration: underline;
+		text-underline-offset: 2px;
+		transition: color var(--transition-fast);
+	}
+
+	.contact-social-link:hover {
 		color: #ffffff;
 	}
 

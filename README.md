@@ -22,7 +22,8 @@ Proyek ini adalah website profil / landing page resmi untuk **Pantai Guci Batu K
 Pantai Guci Batu Kapal menyajikan pesona alam pantai yang otentik di Desa Maja. Dikelilingi rimbunnya pepohonan pantai yang sejuk, serta memiliki ciri khas gugusan batu karang alami di lepas pantai yang memecah riak ombak. Tempat ini sangat cocok untuk liburan keluarga yang tenang dan aktivitas berkemah eksklusif.
 
 ## Hubungi Kami
-- **Instagram**: [@baraqbahbeachnature](https://instagram.com/baraqbahbeachnature)
+- **Instagram**: [@beachbaraqbah](https://www.instagram.com/beachbaraqbah)
+- **TikTok**: [@baraqbahbeachnature](https://www.tiktok.com/@baraqbahbeachnature)
 - **Email**: baraqbahbeachnature@gmail.com
 - **Alamat**: Jl. Pesisir Desa Maja, Kec. Kalianda, Kab. Lampung Selatan
 - **Jam Operasional**: 07.00 - 17.00 WIB (Buka Setiap Hari)

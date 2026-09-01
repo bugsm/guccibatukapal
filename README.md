@@ -23,7 +23,7 @@ Pantai Guci Batu Kapal menyajikan pesona alam pantai yang otentik di Desa Maja. 
 
 ## Hubungi Kami
 - **Instagram**: [@beachbaraqbah](https://www.instagram.com/beachbaraqbah)
-- **TikTok**: [@baraqbahbeachnature](https://www.tiktok.com/@baraqbahbeachnature)
+- **TikTok**: [@pikabaraqbah04](https://www.tiktok.com/@pikabaraqbah04)
 - **Email**: baraqbahbeachnature@gmail.com
 - **Alamat**: Jl. Pesisir Desa Maja, Kec. Kalianda, Kab. Lampung Selatan
 - **Jam Operasional**: 07.00 - 17.00 WIB (Buka Setiap Hari)
